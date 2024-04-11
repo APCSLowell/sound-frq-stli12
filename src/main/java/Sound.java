@@ -47,6 +47,6 @@ if(samples[i] != 0){
     }
     }
     for(int j = index; j < array.length; j++){
-array[j] == sample[j];
+array[j] = sample[j];
   }
 }
