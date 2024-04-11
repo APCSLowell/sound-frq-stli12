@@ -48,4 +48,4 @@ array[j - count] = samples[j];
     }
     samples = array;
 }
-}
+
