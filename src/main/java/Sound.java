@@ -43,6 +43,8 @@ public class Sound
       count++;
     }
     int [] array = new int[samples.length - count];
-    for(int j = 0; j < array.length; j ++){
-array[j] = samples[j + count];
+    for(int j = count; j < samples.length; j ++){
+array[j - count] = samples[j];
+    }
+    samples = array;
 }
