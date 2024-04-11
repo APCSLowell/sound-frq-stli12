@@ -39,12 +39,12 @@ public class Sound
   public void trimSilenceFromBeginning()
   {
    int count = 0;
-    while(samples[count] == 0){
+    while(samples[count] == 0)
       count++;
-    }
+    
     int [] array = new int[samples.length - count];
-    for(int j = count; j < samples.length; j ++){
+    for(int j = count; j < samples.length; j ++)
 array[j - count] = samples[j];
-    }
+    
     samples = array;
 }
