@@ -38,7 +38,7 @@ public class Sound
    */
   public void trimSilenceFromBeginning()
   {
-   int count = 0;
+    int count = 0;
     while(samples[count] == 0){
       count++;
     }
@@ -47,5 +47,5 @@ public class Sound
 array[j - count] = samples[j];
     }
     samples = array;
+  }
 }
-
