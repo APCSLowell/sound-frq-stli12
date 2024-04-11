@@ -21,8 +21,8 @@ public class Sound
     samples[i] = limit;
     change++;
   }
-      else if(samples[i]< (limit * -1)){
-        samples[i] = (limit * -1);
+      else if(samples[i]< -limit){
+        samples[i] = -limit;
         change++;
       }
     }
